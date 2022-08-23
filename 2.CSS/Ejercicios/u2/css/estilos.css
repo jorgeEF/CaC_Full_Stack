@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* para que considere tamaños de borde en tamaño maximo en cajas */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: linen;
+}
+
+h1{
+    text-align: center;
+    padding: 1rem;
+}
+
+.caja{
+    width: 32%;
+    margin: 0.5%;
+    padding: 1em;
+    border: 1px solid black;
+    /* para acomodar elementos de bloque en linea: */
+    /* 1er metodo para acomodar cajas pero se mueve si cambai texto */
+    /* float: left; */
+
+    /* 2do metodo para acomodar cajas, soluciona textos mas largos: */
+    display: inline-block;
+    vertical-align: top;
+
+    /* metodo actual flex-box y grid */
+
+}
+
+img{
+    max-width: 100%;
+}

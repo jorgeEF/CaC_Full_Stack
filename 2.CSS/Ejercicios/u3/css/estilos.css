@@ -1,0 +1,42 @@
+body{
+    width: 80%;
+    /* margen superior 0, costados automatico: */
+    margin: 0 auto;
+}
+
+.contenedor{
+    border: 10px solid black;
+    height: 400px;
+    /* width: 1000px; */
+    margin: 20px;
+    /* display flex pone las cajas al lado en vez de vertical*/
+    display: flex;
+
+}
+
+.elemento{
+
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 3rem;
+    margin: 3px;
+
+}
+
+#caja1{
+    background-color: red;
+}
+
+#caja2{
+    background-color: green;
+}
+
+#caja3{
+    background-color: blue;
+}
+
+#caja4{
+    background-color: orange;
+}
