@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <img src="https://picsum.photos/id/684/800/100" alt="banner">
+        <nav>
+            <h3>Menú</h3>
+            <ul>
+                <li><a href="">menu 1</a></li>
+                <li><a href="">menu 2</a></li>
+                <li><a href="">menu 3</a></li>
+                <li><a href="">menu 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h3>Sección Formulario</h3>
+            <form action="">
+                <div>
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="ingrese su nombre"></input>
+                </div>
+                <br>
+                <div>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="ingrese su Email"></input>
+                </div>
+                <br>
+                <div>
+                    <label for="pais">Pais: </label>
+                    <select name="pais" id="pais">
+                        <option value="ar">Argentina</option>
+                        <option value="bl">Bolivia</option>
+                        <option value="uy">Uruguay</option>
+                        <option value="py">Paraguay</option>
+                    </select>
+                </div>
+                <br>
+                <div>            
+                    <label for="profesion">Profesión: </label><br>
+                    Estudiante: <input type="checkbox" id="profesion" name="profesion" value="Estudiante">
+                    Profesional: <input type="checkbox" id="profesion" name="profesion" value="Profesional">
+                    Desempleado: <input type="checkbox" id="profesion" name="profesion" value="Desempleado">
+                </div>
+                <br>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <h3>Pie de página</h3>
+    </footer>
+</body>
+</html>

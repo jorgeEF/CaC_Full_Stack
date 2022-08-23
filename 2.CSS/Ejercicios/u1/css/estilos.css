@@ -1,0 +1,26 @@
+/* Selector universal */
+*{
+    color:black;
+}
+
+/* selector etiqueta */
+h1{
+    text-align: center;
+    color:red;
+}
+
+/* selector etiqueta en etiqueta */
+p strong{
+    color: green;
+}
+
+/* selector clase */
+.texto-azul{
+    color: blue;
+    font-family:monospace;
+}
+
+/* selector id */
+#texto-rojo{
+    color: red;
+}
