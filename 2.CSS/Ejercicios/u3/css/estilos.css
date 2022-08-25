@@ -6,20 +6,33 @@ body{
 
 .contenedor{
     border: 10px solid black;
-    height: 400px;
-    /* width: 1000px; */
+    border-radius: 25px;
+    height: 500px;
+    width: 100%;
     margin: 20px;
-    /* display flex pone las cajas al lado en vez de vertical*/
+    /* display flex posiciona los elementos de manera flexible*/
     display: flex;
+    /* direccion de ese flex */
+    flex-direction: row;
+    /* posicionado horizontal: */
+    justify-content: center;
+    /* posicionado vertical: */
+    align-items: center;
+    /* manejo de las cajas: */
+    flex-wrap: nowrap;
+    align-content: center;
 
 }
 
 .elemento{
 
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     border: 1px solid black;
-    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 3rem;
     margin: 3px;
 
@@ -27,14 +40,17 @@ body{
 
 #caja1{
     background-color: red;
+    /* align-self: flex-start; */
 }
 
 #caja2{
     background-color: green;
+    /* align-self: flex-end; */
 }
 
 #caja3{
     background-color: blue;
+    /* align-self: baseline; */
 }
 
 #caja4{
