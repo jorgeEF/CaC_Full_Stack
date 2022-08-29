@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: gainsboro;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100px;
+}
+
+#cir1 {
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    border: 1px;
+    border-radius: 50px;
+    margin: 15px;
+}
+#cir2 {
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border: 1px;
+    border-radius: 50px;
+    margin: 15px;    
+}
+#cir3 {
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border: 1px;
+    margin: 15px;
+    border-radius: 50px;    
+}
+
+.contenedor {
+    width: 90%;
+    margin:0 auto;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#c1 {
+    background-color: rgb(190, 61, 61);
+    width: 60%;
+    height: 150px;
+}
+
+#c2 {
+    background-color: rgb(190, 61, 61);
+    width: 35%;
+    height: 150px;
+}
+
+.middle {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.middle_a {
+    width: 40%;
+}
+
+.middle_b {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+#c3 {
+    background-color: orange;
+    height: 400px;
+}
+
+#c4 {
+    background-color: darkmagenta;
+    height: 190px;
+    margin-bottom: 20px;
+}
+
+#c5 {
+    background-color: darkmagenta;
+    height: 190px;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+#c6 {
+    background-color: rgb(38, 129, 204);
+    width: 26%;
+    height: 120px;
+}
+
+#c7 {
+    background-color: rgb(38, 129, 204);
+    width: 41%;
+    height: 120px;
+}
+
+#c8 {
+    background-color: rgb(38, 129, 204);
+    width: 26%;
+    height: 120px;
+}
