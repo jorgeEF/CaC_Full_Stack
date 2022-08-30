@@ -11,12 +11,12 @@
 }
 
 #cir1 {
-    background-color: red;
+    background-color: orangered;
     width: 40px;
     height: 40px;
     border: 1px;
     border-radius: 50px;
-    margin-left: 60px;
+    margin-left: 40px;
     /* margin: 15px; */
 }
 #cir2 {
@@ -37,7 +37,7 @@
 }
 
 .contenedor {
-    width: 90%;
+    width: 95%;
     margin:0 auto;
 }
 
@@ -49,13 +49,13 @@
 }
 
 #c1 {
-    background-color: rgb(190, 61, 61);
+    background-color: orangered;
     width: 60%;
     height: 150px;
 }
 
 #c2 {
-    background-color: rgb(190, 61, 61);
+    background-color: orangered;
     width: 35%;
     height: 150px;
 }
@@ -79,18 +79,18 @@
 
 #c3 {
     background-color: orange;
-    height: 400px;
+    height: 360px;
 }
 
 #c4 {
     background-color: darkmagenta;
-    height: 190px;
+    height: 170px;
     margin-bottom: 20px;
 }
 
 #c5 {
     background-color: darkmagenta;
-    height: 190px;
+    height: 170px;
 }
 
 .footer {
