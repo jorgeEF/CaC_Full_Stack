@@ -4,17 +4,19 @@
 }
 
 :root{
-    --green-color: rgb(138, 211, 55);
+    --green-color: rgb(181, 209, 81);
     --blue-color: rgb(31, 165, 189);
-    --grey-color: rgb(200 200 200);    
+    --grey-color: rgb(201, 201, 201);    
 }
 
 .contenedor {
-    width: 90vw;
-    margin: 0 auto;  
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 2%;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
 
     grid-template-areas:  
     "header"
@@ -24,7 +26,7 @@
 
 .header {
     width: 100%;
-    height: 25vh;
+    height: 30vh;
     background-color: var(--green-color);
     grid-area: header;
     display: flex;
@@ -34,24 +36,47 @@
 
 .main {
     width: 100%;
-    height: 25vh;
-    background-color: var(--blue-color);
+    height: 30vh;
+    background-color: var(--white-color);
     grid-area: main;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .footer {
     width: 100%;
     height: 20vh;
-    background-color: var(--grey-color);
+    background-color: var(--white-color);
     grid-area: footer;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
+}
+
+#section1, #section2, #section3 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--blue-color);
+}
+
+#widget_1, #widget_2, #widget_3, #widget_4 {
+    width: 100%;
+    height: 100%;
+    background-color: var(--grey-color);
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px){
+    .main {
+        flex-direction: column;
+        /* flex-wrap: wrap; */
+    }
+
+    .footer{
+        flex-wrap: wrap;
+    }
 }
 
 
