@@ -75,7 +75,16 @@
     }
 
     .footer{
+        width: 100%;
+        height: 15vh;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
         flex-wrap: wrap;
+    }
+    #widget_1, #widget_2, #widget_3, #widget_4 {
+        width: 50%;
+        height: 100%;
     }
 }
 
