@@ -9,6 +9,6 @@ Fron-End:
 3. Boostrap
 4. Javascript
 
-Back End:  
-5. NodeJS  
-6. MySQL
+Back End:
+1. NodeJS  
+2. MySQL
