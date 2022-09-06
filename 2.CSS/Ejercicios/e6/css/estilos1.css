@@ -1,0 +1,23 @@
+* {
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor {
+    height: 100vh;
+    background-color: red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#caja {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+
+}

@@ -1,0 +1,23 @@
+#caja {
+
+    transition: 1s;
+
+    background-image: url(https://picsum.photos/id/323/600/400);
+
+    background-size: cover;
+
+    filter: grayscale(100%);
+
+}
+
+#caja:hover{
+    filter: grayscale(0%);    
+}
+
+#caja:active {
+    transform: rotate(5deg) scale(1.1);
+}
+
+h1::first-letter{
+    font-size: 5rem;
+}

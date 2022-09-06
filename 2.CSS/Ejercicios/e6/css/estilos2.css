@@ -1,0 +1,15 @@
+/* TRANSFORM */
+
+#caja {
+    /* mover elemento segun eje */
+    /* transform: translate(40px,-40px); */
+
+    /* cambiar el tamaño */
+    /* transform: scale(1.2); */
+
+    /* rotar */
+    transform: rotate(5deg);
+
+    /* skew */
+    /* transform: skew(-5deg, -10deg); */
+}
