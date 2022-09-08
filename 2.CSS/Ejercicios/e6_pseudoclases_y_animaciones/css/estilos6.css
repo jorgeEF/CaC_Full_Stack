@@ -1,0 +1,10 @@
+#caja {
+    /* background-color: white; */
+    height: 400px;
+    width: 400px;
+
+    /* box-shadow: 30px 10px 10px black; */
+
+    background: linear-gradient(black, orange);
+}
+
