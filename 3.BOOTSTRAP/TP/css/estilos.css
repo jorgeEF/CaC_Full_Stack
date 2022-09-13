@@ -49,19 +49,9 @@ a{
 }
 
 footer{
-    margin-top: 15px;
+    margin-top: 15px;    
     height: 10vw;
     width: 100vw;
     background-color: rgb(15, 64, 87);
-    display: flex;
+    color: white;    
 }
-
-#footer_1, #footer_2, #footer_3, #footer_4, #footer_5, #footer_6, #footer_7{
-    height: 100%;
-    width: 14.28vw;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    color: white;
-}   
