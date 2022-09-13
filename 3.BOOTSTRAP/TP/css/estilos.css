@@ -8,14 +8,17 @@ h6 {
     font-weight: normal;
 }
 
-/* p{
-    text-align: center;
-} */
+a{
+    color: #000;
+}
 
-/* #header{
-    display: flex;
-    justify-content: flex-end;
-} */
+.btn-sm{
+    --bs-btn-margin-x: .10rem;
+    --bs-btn-padding-y: .10rem;
+    --bs-btn-padding-x: .5rem;
+    --bs-btn-font-size: .75rem;
+    font-weight: bold;
+}
 
 .carousel-caption {
     height: 100%;
@@ -34,10 +37,6 @@ h6 {
 
 .container {
     margin-top: 15px;
-}
-
-a{
-    color: #000;
 }
 
 .lugar {
