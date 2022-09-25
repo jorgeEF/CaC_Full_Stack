@@ -12,40 +12,8 @@ a{
     color: #000;
 }
 
-.carousel-caption {
-    height: 100%;
-    width: 50vw;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: end;
-    transform: translate(17vw, 8vh);
-}
-
-#car1, #car2, #car3 {
+#brillo {
     filter: brightness(0.4);
-}
-
-.container {
-    margin-top: 15px;
-}
-
-#lugar {
-    margin-bottom: 15px;
-}
-
-#bsas{
-    padding: 20px;
-    color: white;
-    background-color: rgb(45, 45, 50);
-}
-
-.conviertete{
-    margin-top: 15px;
-    margin: 0 auto;
-    width: 65vw;
-
 }
 
 footer{
