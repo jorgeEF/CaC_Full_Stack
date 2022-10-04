@@ -1,11 +1,10 @@
-// funciones
-
+// funcion sin retorno
 function saludar(){
     return "Hola Silvia"
 }
 console.log(saludar());
 
-// funcion con parametros
+// funcion con parametros y retorno
 function saludarNombre(nombre){
     return "hola " + nombre;
 }
