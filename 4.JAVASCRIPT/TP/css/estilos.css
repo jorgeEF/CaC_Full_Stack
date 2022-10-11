@@ -1,0 +1,35 @@
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h6 {
+    text-align: center;
+    font-weight: normal;
+}
+
+a{
+    color: #000;
+}
+
+#brillo {
+    filter: brightness(0.4);
+}
+
+footer{
+    margin-top: 15px;    
+    height: 10vw;
+    width: 100vw;
+    background-color: rgb(15, 64, 87);
+    color: white;
+    display: flex;
+}
+
+#footer_1, #footer_2, #footer_3, #footer_4, #footer_5, #footer_6, #footer_7{
+    height: 100%;
+    width: 14vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}   
