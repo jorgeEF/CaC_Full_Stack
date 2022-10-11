@@ -10,15 +10,15 @@ function calcular(cant, cat){
     switch(cat){
         case 'Estudiante':
             descuento= 0.8;
-            return cant * (ticket*descuento);
+            return cant * (ticket - (ticket*descuento));
         break;
         case 'Trainee':
             descuento= 0.5;
-            return cant * (ticket*descuento);
+            return cant * (ticket - (ticket*descuento));
         break;
         case 'Junior':
             descuento= 0.15;
-            return cant * (ticket*descuento);
+            return cant * (ticket - (ticket*descuento));
         break;
         default: return 0;
     }    
