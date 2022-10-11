@@ -53,19 +53,19 @@ Deber√° contener la funcionalidad en Javascript, al momento de presionar el bot√
         <h6>VENTA</h6>
         <h2>VALOR DE TICKET $200</h2>
         
-        <form>
+        <form method="get">
             <div class="row">
                 <div class="col">
-                  <input type="text" class="form-control form-control-sm" placeholder="Nombre" aria-label="Nombre">
+                  <input type="text" class="form-control form-control-sm" placeholder="Nombre" aria-label="Nombre" id="nombre">
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control form-control-sm" placeholder="Apellido" aria-label="Apellido">
+                  <input type="text" class="form-control form-control-sm" placeholder="Apellido" aria-label="Apellido" id="apellido">
                 </div>
             </div>
             <br>
             <div class="row">
               <div class="col">
-                <input type="email" class="form-control form-control-sm" placeholder="Correo" aria-label="Email">
+                <input type="email" class="form-control form-control-sm" placeholder="Correo" aria-label="Email" id="email">
               </div>
             </div>
             <br>
@@ -76,16 +76,14 @@ Deber√° contener la funcionalidad en Javascript, al momento de presionar el bot√
               <div class="col">
                 <select class="form-select form-select-sm" aria-label="Default select example" id="categoria">
                   <option selected>Selecciona una categor√≠a...</option>
-                  <option value="1">Estudiante</option>
-                  <option value="2">Trainee</option>
-                  <option value="3">Junior</option>
+                  <option value="Estudiante">Estudiante</option>
+                  <option value="Trainee">Trainee</option>
+                  <option value="Junior">Junior</option>
                 </select>
               </div>
             </div>
             <br>
-            <div id="mostrarCalculo">
-              
-            </div>
+            <div id="campoTotal"></div>
             <br>
             <div class="row">
               <div class="col d-grid">            
