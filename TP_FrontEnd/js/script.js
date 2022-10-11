@@ -1,9 +1,25 @@
 // obtener elementos del HTML por id
-const btnResumen = document.getElementById("botonResumen");
-const campoTotal = document.getElementById("campoTotal");
+const btnResumen = document.querySelector("#botonResumen");
+const campoTotal = document.querySelector("#campoTotal");
+let cantidad;
+let categoria;
+let total;
+let texto;
 
+// evento click
+btnResumen.addEventListener('click', mostrar);
 
-// funcion
+// mostrar
+function mostrar(){  
+    cantidad = document.querySelector('#cantidad').value;
+    categoria = document.querySelector('#categoria').value;  
+    total = calcular(cantidad, categoria); 
+    texto = '<div class="alert alert-primary" role="alert">' +
+    'Total a Pagar: $' + total + '</div>';       
+    campoTotal.innerHTML = texto;
+}
+
+// calcular
 function calcular(cant, cat){
     let ticket = 200;
     let descuento;
@@ -23,15 +39,3 @@ function calcular(cant, cat){
         default: return 0;
     }    
 }
-
-function mostrar(){
-    let cantidad = document.getElementById("cantidad").value;
-    let categoria = document.getElementById("categoria").value;
-    let total = calcular(cantidad, categoria); 
-    let texto = '<div class="alert alert-primary" role="alert">' +
-    'Total a Pagar: $' + total + '</div>';       
-    campoTotal.innerHTML = texto;
-}
-
-// calcular con funcion
-btnResumen.addEventListener('click', mostrar());
