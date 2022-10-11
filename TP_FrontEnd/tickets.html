@@ -20,14 +20,14 @@
 Deberá contener la funcionalidad en Javascript, al momento de presionar el botón “Resumen”, deberá mostrar en la sección “Total a Pagar: $”, el monto correspondiente a la cantidad de tickets a comprar con el descuento correspondiente dependiendo la categoría seleccionada, existen 3 categorías, Estudiante, Trainee, Junior -->
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
         <div class="container-fluid ms-5">
-          <a class="navbar-brand" href="#"><img src="./img/codoacodo.png" alt="Codo a Codo" width="75" height="45"> Conf Bs As</a>
+          <a class="navbar-brand" href="./index.html"><img src="./img/codoacodo.png" alt="Codo a Codo" width="75" height="45"> Conf Bs As</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#header">La Conferencia</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">La Conferencia</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#oradores">Los Oradores</a>
@@ -46,58 +46,76 @@ Deberá contener la funcionalidad en Javascript, al momento de presionar el bot�
         </div>
       </nav>    
     <main>
-      <section>
-        <h2>cuadros flex</h2>
+      <div style="width: 72vw; margin: 0 auto;">
+        <section class="container mt-4 d-flex gap-1">
+          <div class="container d-flex flex-column justify-content-center align-items-center border border-primary p-4"><h5>Estudiante</h5>
+            Tienen un descuento <br>
+            <br>
+            <b>80%</b> <br>
+            <small>* presentar documentación</small>        
+          </div>
+          <div class="container d-flex flex-column justify-content-center align-items-center border border-success p-4"><h5>Trainee</h5>
+            Tienen un descuento <br>
+            <br>
+            <b>50%</b> <br>
+          <small>* presentar documentación</small>
+          </div>
+          <div class="container d-flex flex-column justify-content-center align-items-center border border-warning p-4"><h5>Junior</h5>
+            Tienen un descuento <br>
+            <br>
+            <b>15%</b> <br>
+          <small>* presentar documentación</small>
+          </div>
+        </section>
+        <section class="container mt-3" id="conviertete">
+          <h6>VENTA</h6>
+          <h2>VALOR DE TICKET $200</h2>
+          
+          <form action="" method="get">
+              <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control form-control-sm" placeholder="Nombre" aria-label="Nombre" name="nombre">
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control form-control-sm" placeholder="Apellido" aria-label="Apellido" name="apellido">
+                  </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <input type="email" class="form-control form-control-sm" placeholder="Correo" aria-label="Email" name="email">
+                </div>
+              </div>
+              <br>
+              <div class="row">
+                <div class="col">
+                  <input type="number" class="form-control form-control-sm" placeholder="cantidad" aria-label="Cantidad" name="cantidad" default="1" id="cantidad">
+                </div>
+                <div class="col">
+                  <select class="form-select form-select-sm" aria-label="Default select example" name="categoria" id="categoria">
+                    <option selected>Estudiante</option>                    
+                    <option value="Trainee">Trainee</option>
+                    <option value="Junior">Junior</option>
+                  </select>
+                </div>
+              </div>
+              <br>
+              <div id="campoTotal"></div>
+              <br>
+              <div class="row">
+                <div class="col d-grid">            
+                  <button type="reset" class="btn btn-success">Borrar
+                  </button>  
+                </div>
+                <div class="col d-grid">            
+                  <button type="submit" class="btn btn-success" id="botonResumen">Resumen
+                  </button>
+                </div>
+              </div>
+          </form>
       </section>
-      <section class="container w-50 mt-3" id="conviertete">
-        <h6>VENTA</h6>
-        <h2>VALOR DE TICKET $200</h2>
-        
-        <form action="" method="get">
-            <div class="row">
-                <div class="col">
-                  <input type="text" class="form-control form-control-sm" placeholder="Nombre" aria-label="Nombre" name="nombre">
-                </div>
-                <div class="col">
-                  <input type="text" class="form-control form-control-sm" placeholder="Apellido" aria-label="Apellido" name="apellido">
-                </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col">
-                <input type="email" class="form-control form-control-sm" placeholder="Correo" aria-label="Email" name="email">
-              </div>
-            </div>
-            <br>
-            <div class="row">
-              <div class="col">
-                <input type="text" class="form-control form-control-sm" placeholder="cantidad" aria-label="Cantidad" name="cantidad" id="cantidad">
-              </div>
-              <div class="col">
-                <select class="form-select form-select-sm" aria-label="Default select example" name="categoria" id="categoria">
-                  <option selected>Selecciona una categoría...</option>
-                  <option value="Estudiante">Estudiante</option>
-                  <option value="Trainee">Trainee</option>
-                  <option value="Junior">Junior</option>
-                </select>
-              </div>
-            </div>
-            <br>
-            <div id="campoTotal"></div>
-            <br>
-            <div class="row">
-              <div class="col d-grid">            
-                <button type="reset" class="btn btn-success">Borrar
-                </button>  
-              </div>
-              <div class="col d-grid">            
-                <button type="submit" class="btn btn-success" id="botonResumen">Resumen
-                </button>
-              </div>
-            </div>
-        </form>
-    </section>
-    </main>
+      </main>
+    </div>
     <footer>      
         <div id="footer_1">Preguntas Frecuentes</div>
         <div id="footer_2">Contáctanos</div>
