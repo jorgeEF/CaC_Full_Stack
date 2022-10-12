@@ -18,7 +18,7 @@
     <header>        
         <img src="./src/img/banner.jpg" alt="banner" width="100%">
     </header>
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">Inicio</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,16 +50,17 @@
                 </ul>                
               </li>                           
             </ul>
-            <form class="d-flex" role="search">
+            <!-- <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="" aria-label="search">
               <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+            </form> -->
           </div>
         </div>
       </nav>      
 
-      <main class="row w-100 d-flex justify-content-center gap-2 mt-3">
-        <section class="col-md-5 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-5 rounded-5 p-4"><h5>Front-End</h5>
+      <main class="row d-flex justify-content-center gap-2 mt-3">
+        <!-- cajas menu v1 
+            <section class="col-md-5 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-5 rounded-5 p-4"><h5>Front-End</h5>
             <article><a href="#html">HTML</a></article>
             <article><a href="#css">CSS</a></article>
             <article><a href="#bootstrap">Bootstrap</a></article>
@@ -67,19 +68,19 @@
             <article><a href="#scrum_git">SCRUM y Git</a></article>
             <article><a href="#servidores">Servidores</a></article>
         </section>
-        <section class="col-md-5 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-5 rounded-5 p-4"><h5>Back-End</h5>
+        <section class="col-md-5 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-5 rounded-5 p-4 bg-dark text-white"><h5>Back-End</h5>
             <article><a href="#sql">SQL</a></article>
             <article><a href="#node">Node.js</a></article>
-        </section>
-
-        <section id="html" class="col-md-10 col-12 d-flex flex-column justify-content-start align-items-center gap-2 mt-4">
+        </section>   
+        <hr>      -->
+        <h4 style="text-align: center;">Contenidos</h4>
+        <section id="html" class="col-md-3 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-5 rounded-5 p-4">
             <h5>HTML</h5>
-            <a href="./1.HTML/Ejercicios/e1/index.html">Uno</a>
-            <a href="./1.HTML/Ejercicios/e2/index.html">Dos</a>
+            <a href="./1.HTML/Ejercicios/e1/index.html">Etiquetas y elementos</a>
+            <a href="./1.HTML/Ejercicios/e2/index.html">Elementos y formularios</a>
             <a href="./1.HTML/Ejercicios/HTML_CSS_FINAL/index.html">Final</a>
-        </section>
-        <hr>
-        <section id="css" class="col-md-10 col-12 d-flex flex-column justify-content-start align-items-center gap-2">
+        </section>        
+        <section id="css" class="col-md-3 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-5 rounded-5 p-4">
             <h5>CSS</h5>
             <a href="./2.CSS/Ejercicios/e1/index.html">Modificando etiquetas</a>
             <a href="./2.CSS/Ejercicios/e2/index.html">Galería de imágenes</a>
@@ -90,17 +91,15 @@
             <a href="./2.CSS/Ejercicios/e5_responsive/">Responsive</a>
             <a href="./2.CSS/Ejercicios/opcionales/responsive/responsive_1.html">Opcional responsive 1</a>
             <a href="./2.CSS/Ejercicios/opcionales/responsive/responsive_2.html">Opcional responsive 2</a>
-            <a href="./2.CSS/Ejercicios/e6_pseudoclases_y_animaciones/">Animaciones y Pseudoclases</a>            
+            <a href="./2.CSS/Ejercicios/e6_pseudoclases_y_animaciones/">Animaciones/Pseudoclases</a>            
             <a href="./1.HTML/Ejercicios/HTML_CSS_FINAL/index.html">Final</a>
         </section>
-        <hr>
-        <section id="bootstrap" class="col-md-10 col-12 d-flex flex-column justify-content-start align-items-center gap-2">
+        <section id="bootstrap" class="col-md-3 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-5 rounded-5 p-4">
             <h5>Bootstrap</h5>
             <a href="./3.BOOTSTRAP/Ejercicios/e1/index.html">Componentes</a>            
             <a href="./TP_FrontEnd/index.html">TP Integrador</a>
         </section>
-        <hr>
-        <section id="javascript" class="col-md-10 col-12 d-flex flex-column justify-content-start align-items-center gap-2">
+        <section id="javascript" class="col-md-3 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-5 rounded-5 p-4">
             <h5>Javascript</h5>
             <a href="./4.JAVASCRIPT/Ejercicios/index1_variables.html">Variables</a>
             <a href="./4.JAVASCRIPT/Ejercicios/index2_condicionales.html">Condicionales</a>         
@@ -112,24 +111,20 @@
             <a href="./4.JAVASCRIPT/Ejercicios/index8_implementacion.html">Implementanción a HTML</a>
             <a href="./TP_FrontEnd/tickets.html">TP Integrador</a>
         </section>
-        <hr>
-        <section id="scrum_git" class="col-md-10 col-12 d-flex flex-column justify-content-start align-items-center gap-2">
+        <section id="scrum_git" class="col-md-3 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-5 rounded-5 p-4">
           <h5>SCRUM y Git</h5>
           <a href="./5.Scrum_Git_Github/Scrum, git y github.pdf">Apunte SCRUM y Git</a>            
           <a href="./5.Scrum_Git_Github/Clase_git/index.html">Proyecto Clase de Git</a>          
           <a href="./5.Scrum_Git_Github/Clase_git/Git_clase_codoacodo.pdf">PDF Clase de Git</a>
-          <a href="https://github.com/jorgeEF/Clase_git" target="_blank">Repositorio proyecto clase git</a>
-          URL repositorio: https://github.com/jorgeEF/Clase_git.git          
+          <a href="https://github.com/jorgeEF/Clase_git" target="_blank">Repositorio clase git</a>          
         </section>
-        <hr>
-        <section id="servidores" class="col-md-10 col-12 d-flex flex-column justify-content-start align-items-center gap-2">
+        <section id="servidores" class="col-md-3 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-5 rounded-5 p-4">
           <h5>Servidores</h5>
           <a href="./6.Servidores/Servidores.pdf">Apunte</a>            
           <a href="./6.Servidores/Protocolos.pdf">Protocolos</a>          
         </section>
-        <hr>
     </main>
-    <footer class="container-fluid d-flex flex-column justify-content-center align-items-center bg-dark text-white">
+    <footer class="container-fluid d-flex flex-column justify-content-center align-items-center bg-dark text-white mt-4">
         <p> Codo a Codo - Desarrollo Web Full Stack</p>
         <p>by Jorge E. Femenía</p>
     </footer>
