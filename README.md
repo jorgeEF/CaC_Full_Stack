@@ -6,9 +6,11 @@ Contenidos Curso
 Fron-End:  
 1. HTML
 2. CSS
-3. Boostrap
+3. Bootstrap
 4. Javascript
+5. SCRUM y Git
+6. Servidores
 
 Back End:
-1. NodeJS  
+1. Node.js  
 2. MySQL
