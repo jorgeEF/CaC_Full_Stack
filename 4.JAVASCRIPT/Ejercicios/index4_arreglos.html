@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Javascript</title>
+</head>
+<body>
+    <h3>Arreglos</h3>
+    <p>
+        Arreglos
+        <br>
+        const nombres = ["Juan", "Pedro", "Silvia", "Ana", "Maria"];<br>
+        console.log("Mostrando arreglo nombres:\n", nombres);
+        <br>        
+        <br>
+        .push agrega elemento al final del arreglo:<br>
+        nombres.push("Laila");<br>
+        console.log("Mostrando arreglo nombres con .push(Laila):\n", nombres);
+        <br>
+        <br>
+        .pop quita el ultimo elemento del arreglo:<br>
+        let ultimoElemento = nombres.pop();<br>
+        console.log("Mostrando arreglo nombres despues de .pop():\n", nombres);<br>
+        console.log("Mostrando el ultimo elemento quitado:\n", ultimoElemento);
+        <br>
+        <br>
+        .unshift agrega elemento al comienzo del arreglo<br>
+        nombres.unshift("Jorge");<br>
+        console.log("Mostrando arreglo nombres con .unshift(Jorge):\n", nombres);
+        <br>
+        <br>
+        .shift quita el elemento al comienzo del arreglo<br>
+        let primerElemento = nombres.shift();<br>
+        console.log("Mostrando arreglo nombres con .shift():\n", nombres);<br>
+        console.log("Mostrando el primer elemento quitado:\n", primerElemento);
+        <br>
+        <br>
+
+        Obtener/mostrar indice de un elemento dentro del arreglo:<br>
+        arreglo.indexOf(elemento);<br>
+        ej: <br>
+        console.log("Mostrando indice de Silvia:\n",nombres.indexOf("Silvia"));
+        <br>
+        <br>
+        obtener/quitar elemento/s de cierto indice:<br>
+        console.log("quitando elemento del indice: ", nombres.indexOf("Silvia"));<br>
+        <br>
+        elementoIndice = nombres.splice(nombres.indexOf("Silvia"), 1);<br>
+        console.log("Mostrando el elemento quitado:\n", elementoIndice);<br>
+        console.log("El arreglo quedó:\n", nombres);
+    </p>
+    <script src="./js/script4.js"></script>    
+</body>
+</html>

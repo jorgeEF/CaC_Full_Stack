@@ -7,3 +7,11 @@ a {
     text-decoration: none;
     color: black;
 }
+
+article {
+    font-size: small;
+}
+
+footer{
+    height: 10vh;
+}

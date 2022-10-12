@@ -7,7 +7,7 @@ let miVariable;
 
 miVariable = 8;
 
-//console.log(miVariable);
+console.log(miVariable);
 
 
 
