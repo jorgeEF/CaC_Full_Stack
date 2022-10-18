@@ -2,7 +2,7 @@
 
 Cursando desde Agosto 2022 a Diciembre 2022.
 
-Contenidos Curso 
+Contenidos Curso
 
 Fron-End
 
