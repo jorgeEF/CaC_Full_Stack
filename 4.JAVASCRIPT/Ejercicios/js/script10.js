@@ -15,6 +15,8 @@ xhr.send();
 
 //setTime(()=> console.log("texto recibido ", xhr.responseText), 3000);
 
+// creamos una sction con el contenido del txt local
+
 xhr.addEventListener("load", ()=>{
     // console.log("texto recibido ", xhr.responseText)
     let section = document.createElement("section");
@@ -22,10 +24,19 @@ xhr.addEventListener("load", ()=>{
     document.body.appendChild(section);
 })
 
-// tomamos un json externo 
+// tomamos un json externo y lo mostramos
 externo.open("get", "https://jsonplaceholder.typicode.com/users");
 externo.send();
 
+datos = [];
+
 externo.addEventListener("load", ()=>{
-    console.log(JSON.parse(externo.responseText))    
+    console.log(JSON.parse(externo.responseText))
+    datos = JSON.parse(externo.responseText);    
+    let section2 = document.createElement("section");
+    section2.innerHTML = datos[0].name;
+    document.body.appendChild(section2);
 })
+
+
+
