@@ -38,5 +38,11 @@ externo.addEventListener("load", ()=>{
     document.body.appendChild(section2);
 })
 
+//metodo fetch
+fetch('https://jsonplaceholder.typicode.com/users')
+    .then(response => response.json())
+    .then(json => console.log(json))
+
+
 
 
