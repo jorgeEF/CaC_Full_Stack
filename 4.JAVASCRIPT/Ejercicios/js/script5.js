@@ -27,3 +27,5 @@ let personas = [
     hobbies: ["futbol", "gimnasio"]
     }
 ];
+
+console.log(personas[1].nombre)
