@@ -29,9 +29,13 @@ CREATE TABLE IF NOT EXISTS `departamentos` (
   CONSTRAINT `region_FK` FOREIGN KEY (`region_id`) REFERENCES `region` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Volcando datos para la tabla cac_fullstack.departamentos: ~1 rows (aproximadamente)
+-- Volcando datos para la tabla cac_fullstack.departamentos: ~5 rows (aproximadamente)
 INSERT IGNORE INTO `departamentos` (`id`, `nombre`, `region_id`) VALUES
-	(1, 'ventas', 1);
+	(1, 'Ventas', 1),
+	(2, 'Administracion', 2),
+	(3, 'Soporte Tecnico', 3),
+	(4, 'Desarrollo', 4),
+	(5, 'Recursos Humanos', 5);
 
 -- Volcando estructura para tabla cac_fullstack.empleados
 CREATE TABLE IF NOT EXISTS `empleados` (
@@ -58,9 +62,13 @@ CREATE TABLE IF NOT EXISTS `region` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Volcando datos para la tabla cac_fullstack.region: ~1 rows (aproximadamente)
+-- Volcando datos para la tabla cac_fullstack.region: ~5 rows (aproximadamente)
 INSERT IGNORE INTO `region` (`id`, `nombre`) VALUES
-	(1, 'Buenos Aires');
+	(1, 'Buenos Aires'),
+	(2, 'Mendoza'),
+	(3, 'La Rioja'),
+	(4, 'Cordoba'),
+	(5, 'San Luis');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
