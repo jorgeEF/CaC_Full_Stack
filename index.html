@@ -54,91 +54,200 @@
         </div>
       </nav>      
 
-      <main class="row d-flex justify-content-center gap-2 mt-3">        
+      <main class="container row ms-auto me-auto d-flex justify-content-center gap-2 mt-3">        
         <h4 style="text-align: center;">Front-End</h4>
-        <section id="html" class="col-md-2 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-success border-3 rounded-5 p-4 small">
-            <h5>HTML</h5>
-            <a href="./1.HTML/Ejercicios/e1/index.html">Etiquetas y elementos</a>
-            <a href="./1.HTML/Ejercicios/e2/index.html">Elementos y formularios</a>
-            <a href="./1.HTML/Ejercicios/HTML_CSS_FINAL/index.html">Final</a>
-        </section>        
-        <section id="css" class="col-md-2 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-success border-3 rounded-5 p-4 small">
-            <h5>CSS</h5>
-            <a href="./2.CSS/Ejercicios/e1/index.html">Etiquetas</a>
-            <a href="./2.CSS/Ejercicios/e2/index.html">Galería</a>
-            <a href="./2.CSS/Ejercicios/e3_flexbox/">Flexbox</a>
-            <a href="./2.CSS/Ejercicios/opcionales/flexbox/index.html">Opcional flexbox</a>
-            <a href="./2.CSS/Ejercicios/e4_grid/">Grid</a>
-            <a href="./2.CSS/Ejercicios/opcionales/grid/index.html">Opcional Grid</a>
-            <a href="./2.CSS/Ejercicios/e5_responsive/">Responsive</a>
-            <a href="./2.CSS/Ejercicios/opcionales/responsive/responsive_1.html">Opcional responsive 1</a>
-            <a href="./2.CSS/Ejercicios/opcionales/responsive/responsive_2.html">Opcional responsive 2</a>
-            <a href="./2.CSS/Ejercicios/e6_pseudoclases_y_animaciones/">Animaciones y Pseudoclases</a>            
-            <a href="./1.HTML/Ejercicios/HTML_CSS_FINAL/index.html">Final</a>
-        </section>
-        <section id="bootstrap" class="col-md-2 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-success border-3 rounded-5 p-4 small">
-            <h5>Bootstrap</h5>
-            <a href="./3.BOOTSTRAP/Ejercicios/e1/index.html">Componentes</a>            
-            <a href="./TP_FrontEnd/index.html">TP Integrador</a>
-        </section>
-        <section id="javascript" class="col-md-3 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-success border-3 rounded-5 p-4 small">
-            <h5>Javascript</h5>
-            <a href="./4.JAVASCRIPT/Ejercicios/index1_variables.html">Variables</a>
-            <a href="./4.JAVASCRIPT/Ejercicios/index2_condicionales.html">Condicionales</a>         
-            <a href="./4.JAVASCRIPT/Ejercicios/index3_switch.html">Switch</a>
-            <a href="./4.JAVASCRIPT/Ejercicios/index4_arreglos.html">Arreglos</a>
-            <a href="./4.JAVASCRIPT/Ejercicios/index5_objetos.html">Objetos</a>
-            <a href="./4.JAVASCRIPT/Ejercicios/index6_funciones.html">Funciones</a>
-            <a href="./4.JAVASCRIPT/Ejercicios/index7_funcion_callback.html">Callback</a>
-            <a href="./4.JAVASCRIPT/Ejercicios/index8_implementacion.html">Implementanción a HTML</a>
-            <a href="./4.JAVASCRIPT/Ejercicios/index9_asincronia.html">Carga asincrónica</a>
-            <a href="./4.JAVASCRIPT/Ejercicios/index10_carga_remota.html">Carga remota</a>
-            <a href="./TP_FrontEnd/tickets.html">TP Integrador</a>
-        </section>
-        
-        <h4 style="text-align: center;">Back-End</h4>
-        <section id="servidores" class="col-md-3 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-primary border-3 rounded-5 p-4 small">
-          <h5>Servidores</h5>
-          <a href="./6.Servidores/Servidores.pdf">Apunte</a>            
-          <a href="./6.Servidores/Protocolos.pdf">Protocolos</a>          
-        </section>
-        <section id="sql" class="col-md-3 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-primary border-3 rounded-5 p-4 small">
-          <h5>SQL</h5>
-          <a href="./7.Base_de_datos/Unidad 1.pdf">Apunte</a>            
-          <a href="./7.Base_de_datos/db_1.sql">Base de datos</a>
-          <a href="./7.Base_de_datos/Consulta.sql">Operaciones SQL</a>
-        </section>
-        <section id="nodejs" class="col-md-3 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-primary border-3 rounded-5 p-4 small">
-          <h5>Node.js</h5>
-          <a href="./8.Node.js/unidad_1/unidad_1.pdf">Apunte unidad 1</a>
-          <a href="./8.Node.js/unidad_1/hola_node.js">Hola Node.js</a>
-          <a href="./8.Node.js/unidad_1/variables_operaciones.js">Variables y Operaciones</a>
-          <a href="./8.Node.js/unidad_1/condicionales_y_bucles.js">Condicionales y Bucles</a>
-          <a href="./8.Node.js/unidad_1/funciones.js">Funciones</a>
-          <a href="./8.Node.js/unidad_1/app.js">App Node</a>          
-          <a href="./8.Node.js/unidad_2/unidad_2.pdf">Apunte unidad 2</a>
-          <a href="./8.Node.js/unidad_2/servidor_node.js">Servidor HTTP Node</a>
-        </section>
+          <div class="col d-flex justify-content-around border border-success border-3 rounded-3">
+            <section id="html" class="small">
+                <div class="accordion accordion-flush" id="accordionHTML">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingHTML">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHTML" aria-expanded="true" aria-controls="collapseHTML">
+                        <h5>HTML</h5>
+                      </button>
+                    </h2>
+                    <div id="collapseHTML" class="accordion-collapse collapse" aria-labelledby="headingHTML" data-bs-parent="#accordionHTML">
+                      <div class="accordion-body">
+                        <ul>
+                          <li><a href="./1.HTML/Ejercicios/e1/index.html">Etiquetas y elementos</a></li>
+                          <li><a href="./1.HTML/Ejercicios/e2/index.html">Elementos y formularios</a></li>
+                          <li><a href="./1.HTML/Ejercicios/HTML_CSS_FINAL/index.html">Final</a></li>
+                        </ul>                    
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>        
+            <section id="css" class="small">
+              <div class="accordion accordion-flush" id="accordionCSS">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingCSS">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSS" aria-expanded="true" aria-controls="collapseCSS">
+                      <h5>CSS</h5>
+                    </button>
+                  </h2>
+                  <div id="collapseCSS" class="accordion-collapse collapse" aria-labelledby="accordionCSS" data-bs-parent="#accordionCSS">
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="./2.CSS/Ejercicios/e1/index.html">Etiquetas</a></li>
+                        <li><a href="./2.CSS/Ejercicios/e2/index.html">Galería</a></li>
+                        <li><a href="./2.CSS/Ejercicios/e3_flexbox/">Flexbox</a></li>
+                        <li><a href="./2.CSS/Ejercicios/opcionales/flexbox/index.html">Opcional flexbox</a></li>
+                        <li><a href="./2.CSS/Ejercicios/e4_grid/">Grid</a></li>
+                        <li><a href="./2.CSS/Ejercicios/opcionales/grid/index.html">Opcional Grid</a></li>
+                        <li><a href="./2.CSS/Ejercicios/e5_responsive/">Responsive</a></li>
+                        <li><a href="./2.CSS/Ejercicios/opcionales/responsive/responsive_1.html">Opcional responsive 1</a></li>
+                        <li><a href="./2.CSS/Ejercicios/opcionales/responsive/responsive_2.html">Opcional responsive 2</a></li>
+                        <li><a href="./2.CSS/Ejercicios/e6_pseudoclases_y_animaciones/">Animaciones y Pseudoclases</a></li>
+                        <li><a href="./1.HTML/Ejercicios/HTML_CSS_FINAL/index.html">Final</a></li>
+                      </ul>                    
+                    </div>
+                  </div>
+                </div>
+              </div>  
+            </section>
+            <section id="bootstrap" class="small">
+              <div class="accordion accordion-flush" id="accordionBoot">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingBoot">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBoot" aria-expanded="true" aria-controls="collapseBoot">
+                      <h5>Bootstrap</h5>
+                    </button>
+                  </h2>
+                  <div id="collapseBoot" class="accordion-collapse collapse" aria-labelledby="accordionBoot" data-bs-parent="#accordionBoot">
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="./3.BOOTSTRAP/Ejercicios/e1/index.html">Componentes</a></li>
+                        <li><a href="./TP_FrontEnd/index.html">TP Integrador</a></li>
+                      </ul>                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section id="javascript" class="small">
+              <div class="accordion accordion-flush" id="accordionBoot">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingJS">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJS" aria-expanded="true" aria-controls="collapseJS">
+                      <h5>JavaScript</h5>
+                    </button>
+                  </h2>
+                  <div id="collapseJS" class="accordion-collapse collapse" aria-labelledby="accordionJS" data-bs-parent="#accordionJS">
+                    <div class="accordion-body">
+                      <ul>
+                        <li><a href="./4.JAVASCRIPT/Ejercicios/index1_variables.html">Variables</a></li>
+                        <li><a href="./4.JAVASCRIPT/Ejercicios/index2_condicionales.html">Condicionales</a></li>
+                        <li><a href="./4.JAVASCRIPT/Ejercicios/index3_switch.html">Switch</a></li>
+                        <li><a href="./4.JAVASCRIPT/Ejercicios/index4_arreglos.html">Arreglos</a></li>
+                        <li><a href="./4.JAVASCRIPT/Ejercicios/index5_objetos.html">Objetos</a></li>
+                        <li><a href="./4.JAVASCRIPT/Ejercicios/index6_funciones.html">Funciones</a></li>
+                        <li><a href="./4.JAVASCRIPT/Ejercicios/index7_funcion_callback.html">Callback</a></li>
+                        <li><a href="./4.JAVASCRIPT/Ejercicios/index8_implementacion.html">Implementanción a HTML</a></li>
+                        <li><a href="./4.JAVASCRIPT/Ejercicios/index9_asincronia.html">Carga asincrónica</a></li>
+                        <li><a href="./4.JAVASCRIPT/Ejercicios/index10_carga_remota.html">Carga remota</a></li>
+                        <li><a href="./TP_FrontEnd/tickets.html">TP Integrador</a></li>
+                      </ul>                    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <h4 style="text-align: center;">Back-End</h4>
+        <div class="col d-flex justify-content-around border border-success border-3 rounded-3">          
+          <section id="servidores" class="small">
+            <div class="accordion accordion-flush" id="accordionServer">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingServer">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServer" aria-expanded="true" aria-controls="collapseServer">
+                    <h5>Servidores</h5>
+                  </button>
+                </h2>
+                <div id="collapseServer" class="accordion-collapse collapse" aria-labelledby="accordionServer" data-bs-parent="#accordionServer">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="./6.Servidores/Servidores.pdf">Apunte</a></li>
+                      <li><a href="./6.Servidores/Protocolos.pdf">Protocolos</a></li>
+                    </ul>                    
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </section>
+          <section id="sql" class="small">
+            <div class="accordion accordion-flush" id="accordionSQL">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSQL">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSQL" aria-expanded="true" aria-controls="collapseSQL">
+                    <h5>MySQL</h5>
+                  </button>
+                </h2>
+                <div id="collapseSQL" class="accordion-collapse collapse" aria-labelledby="accordionSQL" data-bs-parent="#accordionSQL">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="./7.Base_de_datos/Unidad 1.pdf">Apunte</a></li>
+                      <li><a href="./7.Base_de_datos/db_1.sql">Base de datos</a></li>
+                      <li><a href="./7.Base_de_datos/Consulta.sql">Operaciones SQL</a></li>
+                    </ul>                    
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </section>
+          <section id="nodejs" class="small">
+            <div class="accordion accordion-flush" id="accordionNODE">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNODE">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNODE" aria-expanded="true" aria-controls="collapseNODE">
+                    <h5>Node.js</h5>
+                  </button>
+                </h2>
+                <div id="collapseNODE" class="accordion-collapse collapse" aria-labelledby="accordionNODE" data-bs-parent="#accordionNODE">
+                  <div class="accordion-body">
+                    <ul>
+                      <li><a href="./8.Node.js/unidad_1/unidad_1.pdf">Apunte unidad 1</a></li>
+                      <li><a href="./8.Node.js/unidad_1/hola_node.js">Hola Node.js</a></li>
+                      <li><a href="./8.Node.js/unidad_1/variables_operaciones.js">Variables y Operaciones</a></li>
+                      <li><a href="./8.Node.js/unidad_1/condicionales_y_bucles.js">Condicionales y Bucles</a></li>
+                      <li><a href="./8.Node.js/unidad_1/funciones.js">Funciones</a></li>
+                      <li><a href="./8.Node.js/unidad_1/app.js">App Node</a></li>
+                      <li><a href="./8.Node.js/unidad_2/unidad_2.pdf">Apunte unidad 2</a></li>
+                      <li><a href="./8.Node.js/unidad_2/servidor_node.js">Servidor HTTP Node</a></li>
+                    </ul>                    
+                  </div>
+                </div>
+              </div>
+            </div> 
+          </section>
+        </div>
         <h4 style="text-align: center;">Metodologías Ágiles y Git</h4>
-        <section id="scrum_git" class="col-md-5 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-secondary border-3 rounded-5 p-4 small">
-          <!-- <h5>SCRUM y Git</h5> -->
-          <a href="./5.Scrum_Git_Github/Scrum, git y github.pdf">Apunte SCRUM y Git</a>            
-          <a href="./5.Scrum_Git_Github/Clase_git/index.html">Proyecto Clase de Git</a>          
-          <a href="./5.Scrum_Git_Github/Clase_git/Git_clase_codoacodo.pdf">PDF Clase de Git</a>
-          <a href="https://github.com/jorgeEF/Clase_git" target="_blank">Repositorio clase git</a>          
-        </section>        
+          <section id="scrum_git" class="small">
+            <div class="col d-flex justify-content-around border border-success border-3 rounded-3">
+                    <ul>
+                      <li><a href="./5.Scrum_Git_Github/Scrum, git y github.pdf">Apunte SCRUM y Git</a></li>
+                      <li><a href="./5.Scrum_Git_Github/Clase_git/index.html">Proyecto Clase de Git</a></li>
+                      <li><a href="./5.Scrum_Git_Github/Clase_git/Git_clase_codoacodo.pdf">PDF Clase de Git</a></li>
+                      <li><a href="https://github.com/jorgeEF/Clase_git" target="_blank">Repositorio clase git</a></li>
+                    </ul>
+            </div>
+          </section>
+        </div>       
         <h4 style="text-align: center;">Certificados</h4>
-        <section id="certificado" class="col-md-5 col-10 d-flex flex-column justify-content-start align-items-center gap-2 border border-warning border-3 rounded-5 p-4 small">          
-          Codo a Codo: Desarrollador Web Full-Stack
-          <a href="">Certificado</a>
-          <br>
-          Codo a Codo + Accenture: Habilidades Blandas         
-          <a href="">Certificado 1</a>      
-          <a href="">Certificado 2</a>
-          <a href="">Certificado 3</a>
-          <a href="">Certificado 4</a>
-          <a href="">Certificado 5</a>
-        </section>        
+        <div class="col d-flex justify-content-around border border-success border-3 rounded-3">
+          <section id="certificado" class="small">          
+            <li>Codo a Codo: Desarrollador Web Full-Stack:
+              <a href="">Certificado</a>
+            </li>
+            <li>
+            Codo a Codo + Accenture: Habilidades Blandas:       
+            <a href="">Certificado 1</a>      
+            <a href="">Certificado 2</a>
+            <a href="">Certificado 3</a>
+            <a href="">Certificado 4</a>
+            <a href="">Certificado 5</a>
+            </li>
+          </section>  
+        </div>      
     </main>
     <footer class="container-fluid d-flex flex-column justify-content-center align-items-center bg-dark text-white mt-4">
         <p> Codo a Codo: Desarrollo Web Full Stack - 2022</p>
