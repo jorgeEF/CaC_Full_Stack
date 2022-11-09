@@ -56,12 +56,12 @@
 
       <main class="container row ms-auto me-auto d-flex justify-content-center gap-2 mt-3">        
         <h4 style="text-align: center;">Front-End</h4>
-          <div class="col d-flex justify-content-around border border-success border-3 rounded-3">
-            <section id="html" class="small">
+          <div class="col d-flex flex-md-row flex-column justify-content-center align-items-center">
+            <section id="html" class="col-md-3 col-12 small">
                 <div class="accordion accordion-flush" id="accordionHTML">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingHTML">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHTML" aria-expanded="true" aria-controls="collapseHTML">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseHTML" aria-expanded="true" aria-controls="collapseHTML">
                         <h5>HTML</h5>
                       </button>
                     </h2>
@@ -77,11 +77,11 @@
                   </div>
                 </div>
             </section>        
-            <section id="css" class="small">
+            <section id="css" class="col-md-3 col-12 small">
               <div class="accordion accordion-flush" id="accordionCSS">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingCSS">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSS" aria-expanded="true" aria-controls="collapseCSS">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCSS" aria-expanded="true" aria-controls="collapseCSS">
                       <h5>CSS</h5>
                     </button>
                   </h2>
@@ -105,11 +105,11 @@
                 </div>
               </div>  
             </section>
-            <section id="bootstrap" class="small">
+            <section id="bootstrap" class="col-md-3 col-12 small">
               <div class="accordion accordion-flush" id="accordionBoot">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingBoot">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBoot" aria-expanded="true" aria-controls="collapseBoot">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBoot" aria-expanded="true" aria-controls="collapseBoot">
                       <h5>Bootstrap</h5>
                     </button>
                   </h2>
@@ -124,11 +124,11 @@
                 </div>
               </div>
             </section>
-            <section id="javascript" class="small">
+            <section id="javascript" class="col-md-3 col-12 small">
               <div class="accordion accordion-flush" id="accordionBoot">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingJS">
-                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJS" aria-expanded="true" aria-controls="collapseJS">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseJS" aria-expanded="true" aria-controls="collapseJS">
                       <h5>JavaScript</h5>
                     </button>
                   </h2>
@@ -153,13 +153,14 @@
               </div>
             </section>
           </div>
+          <hr>
           <h4 style="text-align: center;">Back-End</h4>
-        <div class="col d-flex justify-content-around border border-success border-3 rounded-3">          
-          <section id="servidores" class="small">
+        <div class="col-12 d-flex flex-md-row flex-column justify-content-center align-items-center">          
+          <section id="servidores" class="col-md-3 col-12 small">
             <div class="accordion accordion-flush" id="accordionServer">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingServer">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServer" aria-expanded="true" aria-controls="collapseServer">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseServer" aria-expanded="true" aria-controls="collapseServer">
                     <h5>Servidores</h5>
                   </button>
                 </h2>
@@ -174,11 +175,11 @@
               </div>
             </div> 
           </section>
-          <section id="sql" class="small">
+          <section id="sql" class="col-md-3 col-12 small">
             <div class="accordion accordion-flush" id="accordionSQL">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingSQL">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSQL" aria-expanded="true" aria-controls="collapseSQL">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSQL" aria-expanded="true" aria-controls="collapseSQL">
                     <h5>MySQL</h5>
                   </button>
                 </h2>
@@ -194,11 +195,11 @@
               </div>
             </div> 
           </section>
-          <section id="nodejs" class="small">
+          <section id="nodejs" class="col-md-3 col-12 small">
             <div class="accordion accordion-flush" id="accordionNODE">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingNODE">
-                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNODE" aria-expanded="true" aria-controls="collapseNODE">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNODE" aria-expanded="true" aria-controls="collapseNODE">
                     <h5>Node.js</h5>
                   </button>
                 </h2>
@@ -220,34 +221,59 @@
             </div> 
           </section>
         </div>
-        <h4 style="text-align: center;">Metodologías Ágiles y Git</h4>
+        <hr>        
+        <div class="col-12 d-flex flex-md-row flex-column justify-content-center align-items-center">
           <section id="scrum_git" class="small">
-            <div class="col d-flex justify-content-around border border-success border-3 rounded-3">
+            <div class="accordion accordion-flush" id="accordionGIT">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingGIT">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseGIT" aria-expanded="true" aria-controls="collapseGIT">
+                    <h5>Metodologías Agiles y Git</h5>
+                  </button>
+                </h2>
+                <div id="collapseGIT" class="accordion-collapse collapse" aria-labelledby="accordionGIT" data-bs-parent="#accordionGIT">
+                  <div class="accordion-body">
                     <ul>
                       <li><a href="./5.Scrum_Git_Github/Scrum, git y github.pdf">Apunte SCRUM y Git</a></li>
                       <li><a href="./5.Scrum_Git_Github/Clase_git/index.html">Proyecto Clase de Git</a></li>
                       <li><a href="./5.Scrum_Git_Github/Clase_git/Git_clase_codoacodo.pdf">PDF Clase de Git</a></li>
                       <li><a href="https://github.com/jorgeEF/Clase_git" target="_blank">Repositorio clase git</a></li>
-                    </ul>
+                    </ul>                    
+                  </div>
+                </div>
+              </div>
+            </div>             
+          </section>        
+        </div>
+        <hr>   
+        
+        <div class="col-12 d-flex flex-md-row flex-column justify-content-center align-items-center">
+          <section id="certificado" class="small">
+            <div class="accordion accordion-flush" id="accordionCERT">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingCERT">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCERT" aria-expanded="true" aria-controls="collapseCERT">
+                    <h5>Certificados</h5>
+                  </button>
+                </h2>
+                <div id="collapseCERT" class="accordion-collapse collapse" aria-labelledby="accordionCERT" data-bs-parent="#accordionCERT">
+                  <div class="accordion-body">
+                    <ul>
+                        Codo a Codo: Desarrollador Web Full-Stack:
+                      <li><a href="">Certificado</a></li>                      
+                      Codo a Codo + Accenture: Habilidades Blandas:       
+                        <li><a href="">Certificado 1</a></li>
+                        <li><a href="">Certificado 2</a></li>
+                        <li><a href="">Certificado 3</a></li>
+                        <li><a href="">Certificado 4</a></li>
+                        <li><a href="">Certificado 5</a></li>
+                    </ul>                    
+                  </div>
+                </div>
+              </div>
             </div>
-          </section>
-        </div>       
-        <h4 style="text-align: center;">Certificados</h4>
-        <div class="col d-flex justify-content-around border border-success border-3 rounded-3">
-          <section id="certificado" class="small">          
-            <li>Codo a Codo: Desarrollador Web Full-Stack:
-              <a href="">Certificado</a>
-            </li>
-            <li>
-            Codo a Codo + Accenture: Habilidades Blandas:       
-            <a href="">Certificado 1</a>      
-            <a href="">Certificado 2</a>
-            <a href="">Certificado 3</a>
-            <a href="">Certificado 4</a>
-            <a href="">Certificado 5</a>
-            </li>
           </section>  
-        </div>      
+        </div>  
     </main>
     <footer class="container-fluid d-flex flex-column justify-content-center align-items-center bg-dark text-white mt-4">
         <p> Codo a Codo: Desarrollo Web Full Stack - 2022</p>
