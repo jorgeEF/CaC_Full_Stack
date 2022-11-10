@@ -32,11 +32,10 @@
                   Front-End
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#html">HTML</a></li>
-                    <li><a class="dropdown-item" href="#css">CSS</a></li>
-                    <li><a class="dropdown-item" href="#bootstrap">Bootstrap</a></li>
-                    <li><a class="dropdown-item" href="#javascript">JavaScript</a></li>                    
-                    <li><a class="dropdown-item" href="#scrum_git">SCRUM y Git</a></li>                    
+                    <li><a class="dropdown-item" href="#html" data-bs-toggle="collapse" data-bs-target="#collapseHTML">HTML</a></li>
+                    <li><a class="dropdown-item" href="#css" data-bs-toggle="collapse" data-bs-target="#collapseCSS">CSS</a></li>
+                    <li><a class="dropdown-item" href="#bootstrap" data-bs-toggle="collapse" data-bs-target="#collapseBoot">Bootstrap</a></li>
+                    <li><a class="dropdown-item" href="#javascript" data-bs-toggle="collapse" data-bs-target="#collapseJS">JavaScript</a></li>                    
                 </ul>            
               </li>
               <li class="nav-item dropdown">
@@ -44,11 +43,21 @@
                   Back-End
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#servidores">Servidores</a></li>
-                    <li><a class="dropdown-item" href="#sql">Bases de Datos SQL</a></li>
-                    <li><a class="dropdown-item" href="#nodejs">Node.js</a></li>
+                  <li><a class="dropdown-item" href="#servidores" data-bs-toggle="collapse" data-bs-target="#collapseServer">Servidores</a></li>
+                    <li><a class="dropdown-item" href="#sql" data-bs-toggle="collapse" data-bs-target="#collapseSQL">Bases de Datos SQL</a></li>
+                    <li><a class="dropdown-item" href="#nodejs" data-bs-toggle="collapse" data-bs-target="#collapseNODE">Node.js</a></li>
                 </ul>                
-              </li>                           
+              </li>  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#scrum_git" role="button" data-bs-toggle="collapse" data-bs-target="#collapseGIT" aria-expanded="false">
+                  Metodologías Agiles y Git
+                </a>                            
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#certificados" role="button" data-bs-toggle="collapse" data-bs-target="#collapseCERT" aria-expanded="false">
+                  Certificados
+                </a>                           
+              </li>                       
             </ul>            
           </div>
         </div>
@@ -248,7 +257,7 @@
         <hr>   
         
         <div class="col-12 d-flex flex-md-row flex-column justify-content-center align-items-center">
-          <section id="certificado" class="small">
+          <section id="certificados" class="small">
             <div class="accordion accordion-flush" id="accordionCERT">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingCERT">
