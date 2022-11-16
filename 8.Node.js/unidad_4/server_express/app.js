@@ -13,4 +13,4 @@ app.get('/consultas', (req,res) => {
 	res.send('Estas en consultas')
 })
 
-app.listen(PORT, () => console.log('Servidor corriendo desde: http://localhost:${PORT}'));
+app.listen(PORT, () => console.log(`Servidor corriendo desde: http://localhost:${PORT}`));
