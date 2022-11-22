@@ -1,3 +1,12 @@
+// Instalar express generator de modo global:  
+// `npm install -g express-generator`
+
+// Ahora podemos usar el comando directo de express e indicamos que template engine usar, etc:  
+// `express --view=hbs nombre_app`  
+
+// * hbs es un template engine, se puede usar ejs o pug también.
+
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
