@@ -21,19 +21,20 @@ USE `cac_tp_final`;
 
 -- Volcando estructura para tabla cac_tp_final.personas
 CREATE TABLE IF NOT EXISTS `personas` (
-  `id` int NOT NULL AUTO_INCREMENT,
-  `nombre` varchar(50) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `pers_id` int NOT NULL AUTO_INCREMENT,
+  `pers_nombre` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `pers_apellido` varchar(50) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `pers_edad` int DEFAULT NULL,
-  PRIMARY KEY (`id`)
+  PRIMARY KEY (`pers_id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Volcando datos para la tabla cac_tp_final.personas: ~5 rows (aproximadamente)
-INSERT IGNORE INTO `personas` (`id`, `nombre`, `pers_edad`) VALUES
-	(1, 'Maria', 32),
-	(2, 'Jairo', 25),
-	(3, 'Mario', 29),
-	(4, 'Emilia', 22),
-	(5, 'Gustavo', 40);
+INSERT IGNORE INTO `personas` (`pers_id`, `pers_nombre`, `pers_apellido`, `pers_edad`) VALUES
+	(1, 'Maria', 'Sanchez', 32),
+	(2, 'Jairo', 'Lopez', 25),
+	(3, 'Mario', 'Paez', 29),
+	(4, 'Emilia', 'Ramirez', 22),
+	(5, 'Gustavo', 'Molina', 40);
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
