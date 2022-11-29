@@ -9,10 +9,10 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 var conexion = mysql.createConnection({
-        host: 'cursophp.com.ar',
+        host: 'localhost',
         user: 'root',
-        password: 'fullstack',
-        database: 'ejemplo',
+        password: '',
+        database: 'cac_tp_final',
         port: '3306'
 }
 )
