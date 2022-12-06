@@ -20,7 +20,7 @@ CREATE DATABASE IF NOT EXISTS `crud_express` /*!40100 DEFAULT CHARACTER SET utf8
 USE `crud_express`;
 
 -- Volcando estructura para tabla crud_express.personas
-CREATE TABLE IF NOT EXISTS `personas` (
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nombre` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
   `apellido` varchar(45) COLLATE utf8mb4_general_ci NOT NULL,
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `personas` (
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- Volcando datos para la tabla crud_express.personas: ~0 rows (aproximadamente)
-INSERT IGNORE INTO `personas` (`id`, `nombre`, `apellido`) VALUES
+INSERT IGNORE INTO `users` (`id`, `nombre`, `apellido`) VALUES
 	(1, 'Cristina', 'Suarez'),
 	(2, 'Claudio', 'Siman'),
 	(3, 'Sofia', 'Lopez'),
