@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 // importa el modulo mysql y configura la base de datos
-var mysql      = require('mysql');
+var mysql      = require('mysql2');
 var connection = mysql.createConnection({
   host     : 'localhost',
   user     : 'root',
@@ -14,15 +14,16 @@ connection.connect();
   
 // ruta raiz de users, muestra todos los usuarios.
 router.get('/', function(req, res, next) {
-  connection.query('SELECT * FROM personas', function(err, results, fields) {
+  connection.query('SELECT * FROM users', function(err, results, fields) {
         if (err) throw err;  
-        res.send(results);
+        //res.send(results);
+        res.render('users', { title: 'Usuarios', users: results});
   });    
 });
 
 // ruta usuario por id, muestra solo el usuario del id.
 router.get('/:id', function(req, res, next) {    
-  connection.query('SELECT * FROM personas WHERE id = ' + req.params.id, function(err, results, fields) {
+  connection.query('SELECT * FROM users WHERE id = ' + req.params.id, function(err, results, fields) {
         if (err) throw err;          
         res.send(results);
   });
