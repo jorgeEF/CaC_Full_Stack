@@ -25,7 +25,7 @@ router.get('/', function(req, res, next) {
 router.get('/:id', function(req, res, next) {    
   connection.query('SELECT * FROM users WHERE id = ' + req.params.id, function(err, results, fields) {
         if (err) throw err;          
-        res.send(results);
+        res.render('users', { title: 'Usuario', users: results});
   });
 });
 
