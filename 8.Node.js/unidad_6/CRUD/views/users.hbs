@@ -1,26 +1,30 @@
-<h1>{{title}}</h1>
 <div class="container w-50">
-  <form class="d-flex" role="search" method="get">
+  <h1>{{title}}</h1>
+  <form class="d-flex gap-2" role="search" method="get">
         <input class="form-control me-2" type="search" placeholder="Buscar por id" aria-label="Search" id="id" name="id">
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
+        <button class="btn btn-primary" type="submit">Buscar</button>
+        <a class="btn btn-outline-secondary" href="/users">Limpiar</a>
   </form>
+
+  <table class="table table-light table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellido</th>
+        <th scope="col">Gestión</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each users}}
+          <tr>
+              <th scope="row">{{this.id}}</th>
+              <td>{{this.nombre}}</td>
+              <td>{{this.apellido}}</td>
+              <td>Editar | Elminar</td>     
+          </tr>
+      {{/each}}</p>    
+    </tbody>
+  </table>
 </div>
-<table class="table table-light table-striped w-50">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Nombre</th>
-      <th scope="col">Apellido</th>      
-    </tr>
-  </thead>
-  <tbody>
-    {{#each users}}
-        <tr>
-            <th scope="row">{{this.id}}</th>
-            <td>{{this.nombre}}</td>
-            <td>{{this.apellido}}</td>        
-        </tr>
-    {{/each}}</p>    
-  </tbody>
-</table>
 

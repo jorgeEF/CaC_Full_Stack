@@ -13,23 +13,21 @@ var connection = mysql.createConnection({
 connection.connect();
   
 // ruta raiz de users, muestra todos los usuarios.
-router.get('/', function(req, res, next) {
-  connection.query('SELECT * FROM users', function(err, results, fields) {
-        if (err) throw err;  
-        //res.send(results);
-        res.render('users', { title: 'Usuarios', users: results});
-  });    
+router.get('/', function(req = null, res, next) {
+  let filtro = req.query.id;
+  
+  if (filtro == null || filtro == ''){
+    connection.query('SELECT * FROM users', function(err, results, fields) {
+      if (err) throw err;      
+      res.render('users', { title: 'Usuarios', users: results});
+    });
+  }
+  else {
+    connection.query('SELECT * FROM users WHERE id = ' + filtro, function(err, results, fields) {
+      if (err) throw err;
+      res.render('users', { title: 'Usuarios', users: results});
+    });
+  }      
 });
-
-// ruta usuario por id, muestra solo el usuario del id.
-router.get('/:id', function(req, res, next) {    
-  connection.query('SELECT * FROM users WHERE id = ' + req.params.id, function(err, results, fields) {
-        if (err) throw err;          
-        res.render('users', { title: 'Usuario', users: results});
-  });
-});
-
-// cierra la conexion a la base de datos, SE ROMPE
-//connection.end();
 
 module.exports = router;
