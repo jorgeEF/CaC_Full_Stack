@@ -1,30 +1,36 @@
-<div class="container w-50">
-  <h1>{{title}}</h1>
-  <form class="d-flex gap-2" role="search" method="get">
-        <input class="form-control me-2" type="search" placeholder="Buscar por id" aria-label="Search" id="id" name="id">
-        <button class="btn btn-primary" type="submit">Buscar</button>
-        <a class="btn btn-outline-secondary" href="/users">Limpiar</a>
-  </form>
+<h1>{{title}}</h1>
+<a class="btn btn-success mb-3" href="/users/create/">Crear Nuevo Usuario</a>
+<form class="d-flex gap-2" role="search" method="get">
+      <input class="form-control me-2" type="search" placeholder="Buscar por id" aria-label="Search" id="id" name="id">
+      <button class="btn btn-primary" type="submit">Buscar</button>
+      <a class="btn btn-outline-secondary" href="/users">Limpiar</a>
+</form>
 
-  <table class="table table-light table-striped">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Nombre</th>
-        <th scope="col">Apellido</th>
-        <th scope="col">Gestión</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{#each users}}
-          <tr>
-              <th scope="row">{{this.id}}</th>
-              <td>{{this.nombre}}</td>
-              <td>{{this.apellido}}</td>
-              <td>Editar | Elminar</td>     
-          </tr>
-      {{/each}}</p>    
-    </tbody>
-  </table>
-</div>
+<table class="table table-light table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Apellido</th>
+      <th scope="col">Gestión</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each users}}
+        <tr>
+            <th scope="row">{{this.id}}</th>
+            <td>{{this.nombre}}</td>
+            <td>{{this.apellido}}</td>
+            <td class="d-flex gap-1 justify-content-center">
+              <a href="/users/edit/{{this.id}}" class="btn btn-warning">Editar</a>
+
+              <form action="/users/delete/{{this.id}}" method="POST">
+                <button class="btn btn-danger" type="submit">Eliminar</button>
+              </form>
+            </td>
+        </tr>
+    {{/each}}</p>    
+  </tbody>
+</table>
+
 

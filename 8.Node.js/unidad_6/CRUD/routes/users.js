@@ -30,4 +30,29 @@ router.get('/', function(req = null, res, next) {
   }      
 });
 
+router.get('/create', function(req, res, next) { 
+    res.render('create', {title: 'Crear nuevo usuario'});
+});
+
+router.post('/create', function(req, res, next) { 
+  connection.query(`INSERT INTO users (nombre,apellido) VALUES('${req.body.nombre}','${req.body.apellido}');`, function(err, results, fields) {
+    if (err) throw err;
+    res.redirect('/users');
+  });
+});
+
+router.get('/edit/:id', function(req, res, next) {  
+    connection.query('SELECT * FROM users WHERE id = ' + req.params.id, function(err, results, fields) {
+      if (err) throw err;      
+      res.render('users', { title: 'Usuarios', users: results});
+    });
+});
+
+router.post('/delete/:id', function(req, res, next) {  
+  connection.query('DELETE FROM users WHERE id = ' + req.params.id, function(err, results, fields) {
+    if (err) throw err;
+    res.redirect('/users');
+  });
+});
+
 module.exports = router;
