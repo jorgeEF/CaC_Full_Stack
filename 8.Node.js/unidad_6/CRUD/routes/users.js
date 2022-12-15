@@ -36,7 +36,7 @@ router.get('/create', function(req, res, next) {
 });
 
 // guarda usuario creado
-router.post('/create', function(req, res, next) { 
+router.post('/create', function(req, res, next) {  
   connection.query(`INSERT INTO users (nombre,apellido) VALUES('${req.body.nombre}','${req.body.apellido}');`, function(err, results, fields) {
     if (err) throw err;
     res.redirect('/users');
