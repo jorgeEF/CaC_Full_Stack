@@ -9,6 +9,8 @@ var connection = mysql.createConnection({
 // se conecta a la base de datos
 connection.connect();
 
+const Usuario = require('../models/userModel');
+
 module.exports = {    
     index: (req = null, res, next) => {
         let filtro = req.query.id;
@@ -17,13 +19,17 @@ module.exports = {
           connection.query('SELECT * FROM users', function(err, results, fields) {
             if (err) throw err;      
             res.render('users', { title: 'Usuarios', users: results});
-          });
+          });          
+          // let usuarios = Usuario.getAllUsers();         
+          // res.render('users', { title: 'Usuarios', users: usuarios});          
         }
         else {
           connection.query('SELECT * FROM users WHERE id = ' + filtro, function(err, results, fields) {
             if (err) throw err;
             res.render('users', { title: 'Usuarios', users: results});
           });
+          // let result = service.getFilteredUser(filtro);
+          //res.render('users', { title: 'Usuarios', users: result});
         }      
     },
     showCreate: (req, res, next) => { 
@@ -39,7 +45,7 @@ module.exports = {
             connection.query(`SELECT * FROM users WHERE id = ${req.params.id}`, function(err, result, fields) {      
               if (err) throw err;
               res.render('edit', { title: 'Editar Usuario', user: result});
-                });
+            });
     },
     update: (req, res, next) => {  
         connection.query(`UPDATE users SET nombre = '${req.body.nombre}', apellido = '${req.body.apellido}' WHERE id = ` + req.params.id, function(err, result, fields) {      
