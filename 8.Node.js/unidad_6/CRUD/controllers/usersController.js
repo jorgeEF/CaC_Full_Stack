@@ -1,62 +1,37 @@
-// importa el modulo mysql y configura la base de datos
-var mysql      = require('mysql2');
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
-  password : '',
-  database: 'crud_express'
-});
-// se conecta a la base de datos
-connection.connect();
-
+// importamos modelo usuario
 const Usuario = require('../models/userModel');
 
+// exportamos los metodos del controlador
 module.exports = {    
-    index: (req = null, res, next) => {
-        let filtro = req.query.id;
-        
-        if (filtro == null || filtro == ''){
-          connection.query('SELECT * FROM users', function(err, results, fields) {
-            if (err) throw err;      
-            res.render('users', { title: 'Usuarios', users: results});
-          });          
-          // let usuarios = Usuario.getAllUsers();         
-          // res.render('users', { title: 'Usuarios', users: usuarios});          
-        }
-        else {
-          connection.query('SELECT * FROM users WHERE id = ' + filtro, function(err, results, fields) {
-            if (err) throw err;
-            res.render('users', { title: 'Usuarios', users: results});
-          });
-          // let result = service.getFilteredUser(filtro);
-          //res.render('users', { title: 'Usuarios', users: result});
-        }      
-    },
-    showCreate: (req, res, next) => { 
-        res.render('create', {title: 'Crear nuevo usuario'});
-    },
-    save: (req, res, next) => {  
-        connection.query(`INSERT INTO users (nombre,apellido) VALUES('${req.body.nombre}','${req.body.apellido}')`, function(err, results, fields) {
-            if (err) throw err;          
-            res.redirect('/users');
-        });
-    },
-    showEdit: (req, res, next) => {  
-            connection.query(`SELECT * FROM users WHERE id = ${req.params.id}`, function(err, result, fields) {      
-              if (err) throw err;
-              res.render('edit', { title: 'Editar Usuario', user: result});
-            });
-    },
-    update: (req, res, next) => {  
-        connection.query(`UPDATE users SET nombre = '${req.body.nombre}', apellido = '${req.body.apellido}' WHERE id = ` + req.params.id, function(err, result, fields) {      
-          if (err) throw err;      
-          res.redirect('/users');
-        });
-    },
-    remove: (req, res, next) => {  
-        connection.query('DELETE FROM users WHERE id = ' + req.params.id, function(err, results, fields) {
-          if (err) throw err;
-          res.redirect('/users');
-        });
+  index: async (req = null, res, next) => {
+    let id = req.query.id;
+    
+    if (id == null || id == ''){            
+      let usuarios = await Usuario.getAllUsers();
+      res.render('users', { title: 'Usuarios', users: usuarios});          
     }
+    else {
+      let user = await Usuario.getFilteredUser(id);
+      res.render('users', { title: 'Usuarios', users: user});
+    }      
+  },
+  showCreate: (req, res, next) => { 
+    res.render('create', {title: 'Crear nuevo usuario'});
+  },
+  save: async (req, res, next) => {          
+    Usuario.saveUser(req);
+    res.redirect('/users');
+  },
+  showEdit: async (req, res, next) => {              
+    let user = await Usuario.showEdit(req);
+    res.render('edit', { title: 'Editar Usuario', user: user});
+  },
+  update: async (req, res, next) => {          
+    Usuario.update(req);        
+    res.redirect('/users');        
+  },
+  remove: (req, res, next) => {          
+    Usuario.remove(req);
+    res.redirect('/users');
+  }
 }
