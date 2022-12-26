@@ -1,0 +1,26 @@
+.principal{
+    background-image: url(./../imagenes/reunion1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 94vh;
+    height: auto;
+    background-position: center;
+
+}
+
+.tabla{
+    background-color: rgb(128, 128, 128,0.95);
+    padding: 30px;
+    
+}
+
+th{
+    font-size: 1.1em;
+    background-color:coral !important;
+    color:black;
+
+}
+
+table, tr, th, td{
+    border: 2px solid black;
+}
